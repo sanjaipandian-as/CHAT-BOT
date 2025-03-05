@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  padding: 10px;
+}
+
+#chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #1e1e1e;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+#send-btn {
+  background: #a855f7; /* Purple button */
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #a855f7; /* Purple bubble */
+  color: white;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #374151; /* Dark gray bubble */
+  color: white;
+}
